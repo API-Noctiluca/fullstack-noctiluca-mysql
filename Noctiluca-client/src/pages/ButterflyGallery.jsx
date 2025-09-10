@@ -15,15 +15,15 @@ export default function ButterflyGallery() {
   const [editingButterfly, setEditingButterfly] = useState(null);
   const [editFormData, setEditFormData] = useState({
     name: '',
-    'other names': '',
+    other_names: '',
     family: '',
-    Location: '',
-    'Hábitat': '',
-    Morphology: '',
-    Life: '',
-    Feeding: '',
-    Conservation: '',
-    'about conservation': '',
+    location: '',
+    habitat: '',
+    morphology: '',
+    life: '',
+    feeding: '',
+    conservation: '',
+    about_conservation: '',
     image: ''
   });
 
@@ -71,15 +71,15 @@ export default function ButterflyGallery() {
     setEditingButterfly(butterfly);
     setEditFormData({
       name: butterfly.name || '',
-      'other names': butterfly['other names'] || '',
+      other_names: butterfly.other_names || '',
       family: butterfly.family || '',
-      Location: butterfly.Location || '',
-      'Hábitat': butterfly['Hábitat'] || '',
-      Morphology: butterfly.Morphology || '',
-      Life: butterfly.Life || '',
-      Feeding: butterfly.Feeding || '',
-      Conservation: butterfly.Conservation || '',
-      'about conservation': butterfly['about conservation'] || '',
+      location: butterfly.location || '',
+      habitat: butterfly.habitat || '',
+      morphology: butterfly.morphology || '',
+      life: butterfly.Life || '',
+      feeding: butterfly.feeding || '',
+      conservation: butterfly.conservation || '',
+      about_conservation: butterfly.about_conservation || '',
       image: butterfly.image || ''
     });
     setShowEditModal(true);
