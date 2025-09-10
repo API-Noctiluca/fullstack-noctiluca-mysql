@@ -1,4 +1,4 @@
-const URL_API = "http://localhost:3002/butterfly";
+const URL_API = "http://localhost:8000/api/butterflies";
 const URL_CONTACTS = "http://localhost:3002/contacts";
 
 // ===== FUNCIONES PARA MARIPOSAS =====

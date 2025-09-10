@@ -34,13 +34,13 @@ const ButterflyDetail = () => {
   const [editForm, setEditForm] = useState({
     name: '',
     family: '',
-    Location: '',
-    Hábitat: '',
-    Morphology: '',
-    Life: '',
-    Feeding: '',
-    Conservation: '',
-    'about conservation': '', // NUEVO CAMPO AGREGADO
+    location: '',
+    habitat: '',
+    morphology: '',
+    life: '',
+    feeding: '',
+    conservation: '',
+    about_conservation: '', // NUEVO CAMPO AGREGADO
     image: ''
   });
 
@@ -97,13 +97,13 @@ const ButterflyDetail = () => {
         setEditForm({
           name: data.name || '',
           family: data.family || '',
-          Location: data.Location || '',
-          Hábitat: data.Hábitat || '',
-          Morphology: data.Morphology || '',
-          Life: data.Life || '',
-          Feeding: data.Feeding || '',
-          Conservation: data.Conservation || '',
-          'about conservation': data['about conservation'] || '', // NUEVO CAMPO AGREGADO
+          location: data.location || '',
+          habitat: data.habitat || '',
+          morphology: data.morphology || '',
+          life: data.life || '',
+          feeding: data.feeding || '',
+          conservation: data.conservation || '',
+          about_conservation: data.about_conservation || '', // NUEVO CAMPO AGREGADO
           image: data.image || ''
         });
         
@@ -194,13 +194,13 @@ const ButterflyDetail = () => {
     setEditForm({
       name: butterfly.name || '',
       family: butterfly.family || '',
-      Location: butterfly.Location || '',
-      Hábitat: butterfly.Hábitat || '',
-      Morphology: butterfly.Morphology || '',
-      Life: butterfly.Life || '',
-      Feeding: butterfly.Feeding || '',
-      Conservation: butterfly.Conservation || '',
-      'about conservation': butterfly['about conservation'] || '', // RESTAURAR NUEVO CAMPO
+      location: butterfly.location || '',
+      habitat: butterfly.habitat || '',
+      morphology: butterfly.morphology || '',
+      life: butterfly.life || '',
+      feeding: butterfly.feeding || '',
+      conservation: butterfly.conservation || '',
+      about_conservation: butterfly.about_conservation || '', // RESTAURAR NUEVO CAMPO
       image: butterfly.image || ''
     });
   };
@@ -363,19 +363,19 @@ const ButterflyDetail = () => {
                   {/* Sección de Ubicación */}
                   <div className="info-section">
                     <h3 className="section-title">Ubicación</h3>
-                    <p className="section-content">{butterfly.Location || 'Información no disponible'}</p>
+                    <p className="section-content">{butterfly.location || 'Información no disponible'}</p>
                   </div>
                   
                   {/* Sección de Morfología */}
                   <div className="info-section">
                     <h3 className="section-title">Morfología</h3>
-                    <p className="section-content">{butterfly.Morphology || 'Información no disponible'}</p>
+                    <p className="section-content">{butterfly.morphology || 'Información no disponible'}</p>
                   </div>
                   
                   {/* Sección de Alimentación */}
                   <div className="info-section">
                     <h3 className="section-title">Alimentación</h3>
-                    <p className="section-content">{butterfly.Feeding || 'Información no disponible'}</p>
+                    <p className="section-content">{butterfly.feeding || 'Información no disponible'}</p>
                   </div>
                   
                 </div>
@@ -386,19 +386,19 @@ const ButterflyDetail = () => {
                   {/* Sección de Hábitat */}
                   <div className="info-section">
                     <h3 className="section-title">Hábitat</h3>
-                    <p className="section-content">{butterfly.Hábitat || 'Información no disponible'}</p>
+                    <p className="section-content">{butterfly.habitat || 'Información no disponible'}</p>
                   </div>
                   
                   {/* Sección de Ciclo de Vida */}
                   <div className="info-section">
                     <h3 className="section-title">Ciclo de Vida</h3>
-                    <p className="section-content">{butterfly.Life || 'Información no disponible'}</p>
+                    <p className="section-content">{butterfly.life || 'Información no disponible'}</p>
                   </div>
                   
                   {/* Sección de Conservación */}
                   <div className="info-section">
                     <h3 className="section-title">Estado de Conservación</h3>
-                    <p className="section-content">{butterfly.Conservation || 'Información no disponible'}</p>
+                    <p className="section-content">{butterfly.conservation || 'Información no disponible'}</p>
                   </div>
                   
                 </div>
@@ -473,7 +473,7 @@ const ButterflyDetail = () => {
                   <label className="form-label">Estado de Conservación:</label>
                   <select
                     name="about conservation"
-                    value={editForm['about conservation']}
+                    value={editForm.about_conservation}
                     onChange={handleInputChange}
                     className="form-input"
                   >
@@ -493,7 +493,7 @@ const ButterflyDetail = () => {
                   <label className="form-label">Ubicación:</label>
                   <textarea
                     name="Location"
-                    value={editForm.Location}
+                    value={editForm.location}
                     onChange={handleInputChange}
                     className="form-textarea"
                     placeholder="Ubicación geográfica de la mariposa"
@@ -505,7 +505,7 @@ const ButterflyDetail = () => {
                   <label className="form-label">Hábitat:</label>
                   <textarea
                     name="Hábitat"
-                    value={editForm.Hábitat}
+                    value={editForm.habitat}
                     onChange={handleInputChange}
                     className="form-textarea"
                     placeholder="Descripción del hábitat"
@@ -517,7 +517,7 @@ const ButterflyDetail = () => {
                   <label className="form-label">Morfología:</label>
                   <textarea
                     name="Morphology"
-                    value={editForm.Morphology}
+                    value={editForm.morphology}
                     onChange={handleInputChange}
                     className="form-textarea"
                     placeholder="Descripción morfológica"
@@ -529,7 +529,7 @@ const ButterflyDetail = () => {
                   <label className="form-label">Ciclo de Vida:</label>
                   <textarea
                     name="Life"
-                    value={editForm.Life}
+                    value={editForm.life}
                     onChange={handleInputChange}
                     className="form-textarea"
                     placeholder="Descripción del ciclo de vida"
@@ -541,7 +541,7 @@ const ButterflyDetail = () => {
                   <label className="form-label">Alimentación:</label>
                   <textarea
                     name="Feeding"
-                    value={editForm.Feeding}
+                    value={editForm.feeding}
                     onChange={handleInputChange}
                     className="form-textarea"
                     placeholder="Información sobre alimentación"
@@ -553,7 +553,7 @@ const ButterflyDetail = () => {
                   <label className="form-label">Información Detallada de Conservación:</label>
                   <textarea
                     name="Conservation"
-                    value={editForm.Conservation}
+                    value={editForm.conservation}
                     onChange={handleInputChange}
                     className="form-textarea"
                     placeholder="Información detallada sobre conservación"
