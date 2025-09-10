@@ -318,7 +318,7 @@ export default function ButterflyGallery() {
                       {/* Estado de conservación en la parte superior */}
                       <div 
                         className="conservation-badge"
-                        style={{ backgroundColor: getConservationColor(butterfly['about conservation']) }}
+                        style={{ backgroundColor: getConservationColor(butterfly.about_conservation) }}
                       >
                         {butterfly['about conservation'] || 'No especificado'}
                       </div>
@@ -420,7 +420,7 @@ export default function ButterflyGallery() {
                         type="text"
                         id="other names"
                         name="other names"
-                        value={editFormData['other names']}
+                        value={editFormData.other_names}
                         onChange={handleInputChange}
                       />
                     </div>
