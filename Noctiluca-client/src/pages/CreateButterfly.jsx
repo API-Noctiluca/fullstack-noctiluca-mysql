@@ -8,15 +8,15 @@ export default function CreateButterfly() {
 
   const [formData, setFormData] = useState({
     name: '',
-    'other names': '',
+    other_names: '',
     family: '',
-    Location: '',
-    Hábitat: '',
-    Morphology: '',
-    Life: '',
-    Feeding: '',
-    Conservation: '',
-    'about conservation': '',
+    location: '',
+    habitat: '',
+    morphology: '',
+    life: '',
+    feeding: '',
+    conservation: '',
+    about_conservation: '',
     image: ''
   });
 
@@ -83,15 +83,15 @@ export default function CreateButterfly() {
         setMessage('¡Mariposa añadida correctamente!');
         setFormData({
           name: '',
-          'other names': '',
+          other_names: '',
           family: '',
-          Location: '',
-          Hábitat: '',
-          Morphology: '',
-          Life: '',
-          Feeding: '',
-          Conservation: '',
-          'about conservation': '',
+          location: '',
+          habitat: '',
+          morphology: '',
+          life: '',
+          feeding: '',
+          conservation: '',
+          about_conservation: '',
           image: ''
         });
 
