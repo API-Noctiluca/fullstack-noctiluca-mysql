@@ -205,7 +205,7 @@ const Map = () => {
     const isoCode = getCountryISO(geo);
     if (!isoCode) return;
     const butterfliesInCountry = butterfliesData.filter((butterfly) => {
-      const countries = extractCountriesFromLocation(butterfly.Location || '');
+      const countries = extractCountriesFromLocation(butterfly.location || '');
       return countries.includes(isoCode);
     });
     if (butterfliesInCountry.length > 0) {
@@ -300,11 +300,11 @@ const Map = () => {
                     geographies.map((geo) => {
                       const iso = getCountryISO(geo);
                       const hasButterflies = iso && butterfliesData.some(butterfly => {
-                        const countries = extractCountriesFromLocation(butterfly.Location || '');
+                        const countries = extractCountriesFromLocation(butterfly.location || '');
                         return countries.includes(iso);
                       });
                       const butterflyCount = iso ? butterfliesData.filter(butterfly => {
-                        const countries = extractCountriesFromLocation(butterfly.Location || '');
+                        const countries = extractCountriesFromLocation(butterfly.location || '');
                         return countries.includes(iso);
                       }).length : 0;
 
