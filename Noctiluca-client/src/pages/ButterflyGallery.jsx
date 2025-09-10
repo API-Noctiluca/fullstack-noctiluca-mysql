@@ -15,15 +15,15 @@ export default function ButterflyGallery() {
   const [editingButterfly, setEditingButterfly] = useState(null);
   const [editFormData, setEditFormData] = useState({
     name: '',
-    'other names': '',
+    other_names: '',
     family: '',
-    Location: '',
-    'Hábitat': '',
-    Morphology: '',
-    Life: '',
-    Feeding: '',
-    Conservation: '',
-    'about conservation': '',
+    location: '',
+    habitat: '',
+    morphology: '',
+    life: '',
+    feeding: '',
+    conservation: '',
+    about_conservation: '',
     image: ''
   });
 
@@ -71,15 +71,15 @@ export default function ButterflyGallery() {
     setEditingButterfly(butterfly);
     setEditFormData({
       name: butterfly.name || '',
-      'other names': butterfly['other names'] || '',
+      other_names: butterfly.other_names || '',
       family: butterfly.family || '',
-      Location: butterfly.Location || '',
-      'Hábitat': butterfly['Hábitat'] || '',
-      Morphology: butterfly.Morphology || '',
-      Life: butterfly.Life || '',
-      Feeding: butterfly.Feeding || '',
-      Conservation: butterfly.Conservation || '',
-      'about conservation': butterfly['about conservation'] || '',
+      location: butterfly.location || '',
+      habitat: butterfly.habitat || '',
+      morphology: butterfly.morphology || '',
+      life: butterfly.life || '',
+      feeding: butterfly.feeding || '',
+      conservation: butterfly.conservation || '',
+      about_conservation: butterfly.about_conservation || '',
       image: butterfly.image || ''
     });
     setShowEditModal(true);
@@ -350,7 +350,7 @@ export default function ButterflyGallery() {
                         
                         <div className="location-section">
                           <h3>Ubicación</h3>
-                          <p>{butterfly.Location || 'No especificada'}</p>
+                          <p>{butterfly.location || 'No especificada'}</p>
                         </div>
 
                         {/* Botones de Editar y Eliminar */}
@@ -442,7 +442,7 @@ export default function ButterflyGallery() {
                       <textarea
                         id="Location"
                         name="Location"
-                        value={editFormData.Location}
+                        value={editFormData.location}
                         onChange={handleInputChange}
                         rows="3"
                         required
@@ -459,7 +459,7 @@ export default function ButterflyGallery() {
                       <textarea
                         id="Hábitat"
                         name="Hábitat"
-                        value={editFormData['Hábitat']}
+                        value={editFormData.habitat}
                         onChange={handleInputChange}
                         rows="3"
                         placeholder="Descripción del hábitat natural"
@@ -471,7 +471,7 @@ export default function ButterflyGallery() {
                       <textarea
                         id="Morphology"
                         name="Morphology"
-                        value={editFormData.Morphology}
+                        value={editFormData.morphology}
                         onChange={handleInputChange}
                         rows="3"
                         placeholder="Descripción física de la mariposa"
@@ -483,7 +483,7 @@ export default function ButterflyGallery() {
                       <textarea
                         id="Life"
                         name="Life"
-                        value={editFormData.Life}
+                        value={editFormData.life}
                         onChange={handleInputChange}
                         rows="3"
                         placeholder="Ciclo de vida y comportamiento"
@@ -500,7 +500,7 @@ export default function ButterflyGallery() {
                       <textarea
                         id="Feeding"
                         name="Feeding"
-                        value={editFormData.Feeding}
+                        value={editFormData.feeding}
                         onChange={handleInputChange}
                         rows="3"
                         placeholder="Hábitos alimentarios"
@@ -512,7 +512,7 @@ export default function ButterflyGallery() {
                       <textarea
                         id="Conservation"
                         name="Conservation"
-                        value={editFormData.Conservation}
+                        value={editFormData.conservation}
                         onChange={handleInputChange}
                         rows="3"
                         placeholder="Información detallada sobre conservación"
@@ -524,7 +524,7 @@ export default function ButterflyGallery() {
                       <select
                         id="about conservation"
                         name="about conservation"
-                        value={editFormData['about conservation']}
+                        value={editFormData.about_conservation}
                         onChange={handleInputChange}
                       >
                         <option value="">Seleccionar estado...</option>
