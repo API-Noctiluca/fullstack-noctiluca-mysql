@@ -15,15 +15,15 @@ export default function ButterflyGallery() {
   const [editingButterfly, setEditingButterfly] = useState(null);
   const [editFormData, setEditFormData] = useState({
     name: '',
-    'other names': '',
+    'other_names': '',
     family: '',
-    Location: '',
-    'Hábitat': '',
-    Morphology: '',
-    Life: '',
-    Feeding: '',
-    Conservation: '',
-    'about conservation': '',
+    location: '',
+    'habitat': '',
+    morphology: '',
+    life: '',
+    feeding: '',
+    conservation: '',
+    'about_conservation': '',
     image: ''
   });
 
@@ -71,15 +71,15 @@ export default function ButterflyGallery() {
     setEditingButterfly(butterfly);
     setEditFormData({
       name: butterfly.name || '',
-      'other names': butterfly['other names'] || '',
+      'other_names': butterfly['other_names'] || '',
       family: butterfly.family || '',
-      Location: butterfly.Location || '',
-      'Hábitat': butterfly['Hábitat'] || '',
-      Morphology: butterfly.Morphology || '',
-      Life: butterfly.Life || '',
-      Feeding: butterfly.Feeding || '',
-      Conservation: butterfly.Conservation || '',
-      'about conservation': butterfly['about conservation'] || '',
+      location: butterfly.location || '',
+      'habitat': butterfly['habitat'] || '',
+      morphology: butterfly.morphology || '',
+      life: butterfly.life || '',
+      feeding: butterfly.feeding || '',
+      conservation: butterfly.conservation || '',
+      'about_conservation': butterfly['about_conservation'] || '',
       image: butterfly.image || ''
     });
     setShowEditModal(true);
@@ -350,7 +350,7 @@ export default function ButterflyGallery() {
                         
                         <div className="location-section">
                           <h3>Ubicación</h3>
-                          <p>{butterfly.Location || 'No especificada'}</p>
+                          <p>{butterfly.location || 'No especificada'}</p>
                         </div>
 
                         {/* Botones de Editar y Eliminar */}
@@ -415,12 +415,12 @@ export default function ButterflyGallery() {
                     </div>
 
                     <div className="form-group">
-                      <label htmlFor="other names">Otros nombres:</label>
+                      <label htmlFor="other_names">Otros nombres:</label>
                       <input
                         type="text"
-                        id="other names"
-                        name="other names"
-                        value={editFormData['other names']}
+                        id="other_names"
+                        name="other_names"
+                        value={editFormData['other_names']}
                         onChange={handleInputChange}
                       />
                     </div>
@@ -438,11 +438,11 @@ export default function ButterflyGallery() {
                     </div>
 
                     <div className="form-group">
-                      <label htmlFor="Location">Ubicación:</label>
+                      <label htmlFor="location">Ubicación:</label>
                       <textarea
-                        id="Location"
-                        name="Location"
-                        value={editFormData.Location}
+                        id="location"
+                        name="location"
+                        value={editFormData.location}
                         onChange={handleInputChange}
                         rows="3"
                         required
@@ -455,11 +455,11 @@ export default function ButterflyGallery() {
                     <h3>Características y Hábitat</h3>
                     
                     <div className="form-group">
-                      <label htmlFor="Hábitat">Hábitat:</label>
+                      <label htmlFor="habitat">Hábitat:</label>
                       <textarea
-                        id="Hábitat"
-                        name="Hábitat"
-                        value={editFormData['Hábitat']}
+                        id="habitat"
+                        name="habitat"
+                        value={editFormData['habitat']}
                         onChange={handleInputChange}
                         rows="3"
                         placeholder="Descripción del hábitat natural"
@@ -467,11 +467,11 @@ export default function ButterflyGallery() {
                     </div>
 
                     <div className="form-group">
-                      <label htmlFor="Morphology">Morfología:</label>
+                      <label htmlFor="morphology">Morfología:</label>
                       <textarea
-                        id="Morphology"
-                        name="Morphology"
-                        value={editFormData.Morphology}
+                        id="morphology"
+                        name="morphology"
+                        value={editFormData.morphology}
                         onChange={handleInputChange}
                         rows="3"
                         placeholder="Descripción física de la mariposa"
@@ -479,11 +479,11 @@ export default function ButterflyGallery() {
                     </div>
 
                     <div className="form-group">
-                      <label htmlFor="Life">Vida:</label>
+                      <label htmlFor="life">Vida:</label>
                       <textarea
-                        id="Life"
-                        name="Life"
-                        value={editFormData.Life}
+                        id="life"
+                        name="life"
+                        value={editFormData.life}
                         onChange={handleInputChange}
                         rows="3"
                         placeholder="Ciclo de vida y comportamiento"
@@ -496,11 +496,11 @@ export default function ButterflyGallery() {
                     <h3>Comportamiento y Conservación</h3>
                     
                     <div className="form-group">
-                      <label htmlFor="Feeding">Alimentación:</label>
+                      <label htmlFor="feeding">Alimentación:</label>
                       <textarea
-                        id="Feeding"
-                        name="Feeding"
-                        value={editFormData.Feeding}
+                        id="feeding"
+                        name="feeding"
+                        value={editFormData.feeding}
                         onChange={handleInputChange}
                         rows="3"
                         placeholder="Hábitos alimentarios"
@@ -508,11 +508,11 @@ export default function ButterflyGallery() {
                     </div>
 
                     <div className="form-group">
-                      <label htmlFor="Conservation">Conservación Detallada:</label>
+                      <label htmlFor="conservation">Conservación Detallada:</label>
                       <textarea
-                        id="Conservation"
-                        name="Conservation"
-                        value={editFormData.Conservation}
+                        id="conservation"
+                        name="conservation"
+                        value={editFormData.conservation}
                         onChange={handleInputChange}
                         rows="3"
                         placeholder="Información detallada sobre conservación"
@@ -520,11 +520,11 @@ export default function ButterflyGallery() {
                     </div>
 
                     <div className="form-group">
-                      <label htmlFor="about conservation">Estado de Conservación:</label>
+                      <label htmlFor="about_conservation">Estado de Conservación:</label>
                       <select
-                        id="about conservation"
-                        name="about conservation"
-                        value={editFormData['about conservation']}
+                        id="about_conservation"
+                        name="about_conservation"
+                        value={editFormData['about_conservation']}
                         onChange={handleInputChange}
                       >
                         <option value="">Seleccionar estado...</option>
