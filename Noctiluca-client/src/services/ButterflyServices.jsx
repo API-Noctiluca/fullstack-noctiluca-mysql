@@ -1,4 +1,4 @@
-const URL_API = "http://localhost:3002/butterfly";
+const URL_API = "http://localhost:5000/api/butterflies";
 const URL_CONTACTS = "http://localhost:3002/contacts";
 
 // ===== FUNCIONES PARA MARIPOSAS =====
@@ -6,7 +6,7 @@ const URL_CONTACTS = "http://localhost:3002/contacts";
 // Método GET 
 export async function getAllButterflies() {
   try {
-    const response = await fetch(URL_API); 
+    const response = await fetch(URL_API);
     const data = await response.json();
     return data;
   } catch (error) {
@@ -89,11 +89,11 @@ export async function createContact(contactData) {
       },
       body: JSON.stringify(contactData)
     });
-    
+
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
-    
+
     const data = await response.json();
     return data;
   } catch (error) {
@@ -106,11 +106,11 @@ export async function createContact(contactData) {
 export async function getAllContacts() {
   try {
     const response = await fetch(URL_CONTACTS);
-    
+
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
-    
+
     const data = await response.json();
     return data;
   } catch (error) {
