@@ -320,7 +320,7 @@ export default function ButterflyGallery() {
                         className="conservation-badge"
                         style={{ backgroundColor: getConservationColor(butterfly.about_conservation) }}
                       >
-                        {butterfly['about conservation'] || 'No especificado'}
+                        {butterfly.about_conservation || 'No especificado'}
                       </div>
                       
                       <img
