@@ -34,13 +34,13 @@ const ButterflyDetail = () => {
   const [editForm, setEditForm] = useState({
     name: '',
     family: '',
-    Location: '',
-    Hábitat: '',
-    Morphology: '',
-    Life: '',
-    Feeding: '',
-    Conservation: '',
-    'about conservation': '', // NUEVO CAMPO AGREGADO
+    location: '',
+    habitat: '',
+    morphology: '',
+    life: '',
+    feeding: '',
+    conservation: '',
+    about_conservation: '', // NUEVO CAMPO AGREGADO
     image: ''
   });
 
@@ -97,13 +97,13 @@ const ButterflyDetail = () => {
         setEditForm({
           name: data.name || '',
           family: data.family || '',
-          Location: data.Location || '',
-          Hábitat: data.Hábitat || '',
-          Morphology: data.Morphology || '',
-          Life: data.Life || '',
-          Feeding: data.Feeding || '',
-          Conservation: data.Conservation || '',
-          'about conservation': data['about conservation'] || '', // NUEVO CAMPO AGREGADO
+          location: data.Location || '',
+          habitat: data.Hábitat || '',
+          morphology: data.Morphology || '',
+          life: data.Life || '',
+          feeding: data.Feeding || '',
+          conservation: data.Conservation || '',
+          about_conservation: data.about_conservation || '', // NUEVO CAMPO AGREGADO
           image: data.image || ''
         });
         
@@ -194,13 +194,13 @@ const ButterflyDetail = () => {
     setEditForm({
       name: butterfly.name || '',
       family: butterfly.family || '',
-      Location: butterfly.Location || '',
-      Hábitat: butterfly.Hábitat || '',
-      Morphology: butterfly.Morphology || '',
-      Life: butterfly.Life || '',
-      Feeding: butterfly.Feeding || '',
-      Conservation: butterfly.Conservation || '',
-      'about conservation': butterfly['about conservation'] || '', // RESTAURAR NUEVO CAMPO
+      location: butterfly.location || '',
+      habitat: butterfly.habitat || '',
+      morphology: butterfly.morphology || '',
+      life: butterfly.life || '',
+      feeding: butterfly.feeding || '',
+      conservation: butterfly.conservation || '',
+      about_conservation: butterfly.about_conservation || '', // RESTAURAR NUEVO CAMPO
       image: butterfly.image || ''
     });
   };
