@@ -415,11 +415,11 @@ export default function ButterflyGallery() {
                     </div>
 
                     <div className="form-group">
-                      <label htmlFor="other names">Otros nombres:</label>
+                      <label htmlFor="other_names">Otros nombres:</label>
                       <input
                         type="text"
-                        id="other names"
-                        name="other names"
+                        id="other_names"
+                        name="other_names"
                         value={editFormData.other_names}
                         onChange={handleInputChange}
                       />
@@ -438,10 +438,10 @@ export default function ButterflyGallery() {
                     </div>
 
                     <div className="form-group">
-                      <label htmlFor="Location">Ubicación:</label>
+                      <label htmlFor="location">Ubicación:</label>
                       <textarea
-                        id="Location"
-                        name="Location"
+                        id="location"
+                        name="location"
                         value={editFormData.location}
                         onChange={handleInputChange}
                         rows="3"
@@ -455,10 +455,10 @@ export default function ButterflyGallery() {
                     <h3>Características y Hábitat</h3>
                     
                     <div className="form-group">
-                      <label htmlFor="Hábitat">Hábitat:</label>
+                      <label htmlFor="habitat">Hábitat:</label>
                       <textarea
-                        id="Hábitat"
-                        name="Hábitat"
+                        id="habitat"
+                        name="habitat"
                         value={editFormData.habitat}
                         onChange={handleInputChange}
                         rows="3"
@@ -467,10 +467,10 @@ export default function ButterflyGallery() {
                     </div>
 
                     <div className="form-group">
-                      <label htmlFor="Morphology">Morfología:</label>
+                      <label htmlFor="morphology">Morfología:</label>
                       <textarea
-                        id="Morphology"
-                        name="Morphology"
+                        id="morphology"
+                        name="morphology"
                         value={editFormData.morphology}
                         onChange={handleInputChange}
                         rows="3"
@@ -479,10 +479,10 @@ export default function ButterflyGallery() {
                     </div>
 
                     <div className="form-group">
-                      <label htmlFor="Life">Vida:</label>
+                      <label htmlFor="life">Vida:</label>
                       <textarea
-                        id="Life"
-                        name="Life"
+                        id="life"
+                        name="life"
                         value={editFormData.life}
                         onChange={handleInputChange}
                         rows="3"
@@ -496,10 +496,10 @@ export default function ButterflyGallery() {
                     <h3>Comportamiento y Conservación</h3>
                     
                     <div className="form-group">
-                      <label htmlFor="Feeding">Alimentación:</label>
+                      <label htmlFor="feeding">Alimentación:</label>
                       <textarea
-                        id="Feeding"
-                        name="Feeding"
+                        id="feeding"
+                        name="feeding"
                         value={editFormData.feeding}
                         onChange={handleInputChange}
                         rows="3"
@@ -508,10 +508,10 @@ export default function ButterflyGallery() {
                     </div>
 
                     <div className="form-group">
-                      <label htmlFor="Conservation">Conservación Detallada:</label>
+                      <label htmlFor="conservation">Conservación Detallada:</label>
                       <textarea
-                        id="Conservation"
-                        name="Conservation"
+                        id="conservation"
+                        name="conservation"
                         value={editFormData.conservation}
                         onChange={handleInputChange}
                         rows="3"
@@ -520,10 +520,10 @@ export default function ButterflyGallery() {
                     </div>
 
                     <div className="form-group">
-                      <label htmlFor="about conservation">Estado de Conservación:</label>
+                      <label htmlFor="about_conservation">Estado de Conservación:</label>
                       <select
-                        id="about conservation"
-                        name="about conservation"
+                        id="about_conservation"
+                        name="about_conservation"
                         value={editFormData.about_conservation}
                         onChange={handleInputChange}
                       >
