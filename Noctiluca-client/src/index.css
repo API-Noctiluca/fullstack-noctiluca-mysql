@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+
+
+@theme{
+  --color-indigoprofundo: #1D1B3F;
+  --color-rosaatardecer: #D9A7C7;
+  --color-azulnoche: #2E2C58;
+  --color-orotenue: #F5E0A3;
+  --color-verdemusgo: #72896D;
+  --color-blanconiebla: #F1F1F1;
+}
+
+@theme {
+  --font-librebaskerville: "LibreBaskerville", ;
+  }
+
+
+
+
+
+  
+
+
