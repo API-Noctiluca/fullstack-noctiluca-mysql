@@ -321,7 +321,7 @@ const ButterflyDetail = () => {
                   <div 
                     className="conservation-badge"
                     style={{ 
-                      backgroundColor: getConservationColor(butterfly['about conservation']),
+                      backgroundColor: getConservationColor(butterfly.about_conservation),
                       position: 'absolute',
                       top: '10px',
                       left: '10px',
