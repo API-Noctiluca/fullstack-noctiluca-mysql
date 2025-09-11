@@ -184,7 +184,7 @@ Consulta toda la documentación de la API haciendo clic en el logo:
 
 <div align="center">
   <a href="https://documenter.getpostman.com/view/46421388/2sB3HnJKMj" target="_blank">
-    <img src="./assets/postman.jpg" alt="Postman" width="120"/>
+    <img src="/api-noctiluca-backend/assets/postman.jpg" alt="Postman" width="120"/>
   </a>
 </div>
 
