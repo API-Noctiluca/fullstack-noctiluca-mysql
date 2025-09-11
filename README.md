@@ -11,7 +11,7 @@ Esta primera edición se centra en Europa y ha sido desarrollada como parte de u
 🌍 Descubre mariposas de Europa en un entorno visual, educativo y accesible.
 
 ## 📂 Estructura del Proyecto
-
+```
 📦 fullstack-noctiluca-mysql
 ├── api-noctiluca-backend/   # Backend con Node.js, Express y Sequelize
 │   ├── assets/              # Imágenes usadas en README (cover, postman, etc.)
@@ -43,7 +43,8 @@ Esta primera edición se centra en Europa y ha sido desarrollada como parte de u
     ├── index.html
     ├── package.json
     └── vite.config.js
-
+```
+---
 ## ⚙️ Configuración
 
 ### 1️⃣ Clonar repositorio
@@ -55,7 +56,7 @@ cd fullstack-noctiluca-mysql
 npm install
 
 3️⃣ Iniciar servidor
-🐛 En nuestr aterminar levantamos primero nuestro backend 
+🐛 En nuestra terminal levantamos primero nuestro backend 
 cd api-noctiluca-backend 
 npm run dev
 
@@ -66,13 +67,14 @@ npm run dev
 🦋 Servidor corriendo en:
 👉 http://localhost:5173/
 
+---
 
 ## 🗄️ Base de Datos
 
 La base de datos se gestiona con **MySQL + Sequelize**.  
 Incluye el modelo principal `ButterflyModel`.
 
-
+---
 ## 🛠️ Tecnologías utilizadas
 
 **🔹 Frontend**
@@ -96,7 +98,7 @@ Incluye el modelo principal `ButterflyModel`.
 🐛 Jest + Supertest
  (testing)
 
-
+---
 ## 🧪 Testing
 
 Se usa **Jest + Supertest** para pruebas unitarias y de integración.
