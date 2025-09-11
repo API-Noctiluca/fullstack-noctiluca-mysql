@@ -73,7 +73,7 @@ export default function CreateButterfly() {
     try {
       const newId = Date.now().toString();
       const newButterfly = {
-        id: newId,
+        //id: newId,
         ...formData
       };
 
@@ -156,11 +156,11 @@ export default function CreateButterfly() {
                   </div>
                   
                   <div className="form-group">
-                    <label className="form-label">Hábitat</label>
+                    <label className="form-label">habitat</label>
                     <input
                       type="text"
-                      name="Hábitat"
-                      value={formData.Hábitat}
+                      name="habitat"
+                      value={formData.habitat}
                       onChange={handleChange}
                       className="form-input"
                       required
@@ -171,8 +171,8 @@ export default function CreateButterfly() {
                     <label className="form-label">Alimentación</label>
                     <input
                       type="text"
-                      name="Feeding"
-                      value={formData.Feeding}
+                      name="feeding"
+                      value={formData.feeding}
                       onChange={handleChange}
                       className="form-input"
                       required
@@ -186,8 +186,8 @@ export default function CreateButterfly() {
                     <label className="form-label">Otros nombres</label>
                     <input
                       type="text"
-                      name="other names"
-                      value={formData['other names']}
+                      name="other_names"
+                      value={formData['other_names']}
                       onChange={handleChange}
                       className="form-input"
                     />
@@ -197,8 +197,8 @@ export default function CreateButterfly() {
                     <label className="form-label">Morfología</label>
                     <input
                       type="text"
-                      name="Morphology"
-                      value={formData.Morphology}
+                      name="morphology"
+                      value={formData.morphology}
                       onChange={handleChange}
                       className="form-input"
                       required
@@ -209,8 +209,8 @@ export default function CreateButterfly() {
                     <label className="form-label">Conservación detallada</label>
                     <input
                       type="text"
-                      name="Conservation"
-                      value={formData.Conservation}
+                      name="conservation"
+                      value={formData.conservation}
                       onChange={handleChange}
                       className="form-input"
                       required
@@ -236,8 +236,8 @@ export default function CreateButterfly() {
                     <label className="form-label">Vida</label>
                     <input
                       type="text"
-                      name="Life"
-                      value={formData.Life}
+                      name="life"
+                      value={formData.life}
                       onChange={handleChange}
                       className="form-input"
                       required
@@ -247,8 +247,8 @@ export default function CreateButterfly() {
                   <div className="form-group">
                     <label className="form-label">Estado de conservación</label>
                     <select
-                      name="about conservation"
-                      value={formData['about conservation']}
+                      name="about_conservation"
+                      value={formData.about_conservation}
                       onChange={handleChange}
                       className="form-select"
                       required
@@ -268,8 +268,8 @@ export default function CreateButterfly() {
                   <div className="form-group">
                     <label className="form-label">Ubicación</label>
                     <textarea
-                      name="Location"
-                      value={formData.Location}
+                      name="location"
+                      value={formData.location}
                       onChange={handleChange}
                       rows="4"
                       className="form-textarea"
