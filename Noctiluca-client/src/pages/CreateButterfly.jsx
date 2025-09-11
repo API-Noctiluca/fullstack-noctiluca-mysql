@@ -73,7 +73,7 @@ export default function CreateButterfly() {
     try {
       const newId = Date.now().toString();
       const newButterfly = {
-        id: newId,
+        // id: newId,
         ...formData
       };
 
